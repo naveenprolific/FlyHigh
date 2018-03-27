@@ -1,0 +1,36 @@
+
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Bookiing History</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/bookingh.css') }}">
+        <link rel="shortcut icon"  href="{{ url_for('static',filename='images/f.ico') }}">
+	</head>
+	<body>
+		<nav class="black">
+			<div class="logo">
+				<img src="{{ url_for('static',filename='images/11.jpg') }}">
+			</div>
+			<ul>
+			        <li><a href="/planner/" >Planner</a></li>
+			        <li><a href="/explore/" >Explore</a></li>
+			        <li><a href="/profile/" >Profile</a></li>
+                    <li><a href="/bookingh/" class='active-page'>Booking History</a></li>
+                    <li><a href="/logout/">Log Out</a></li>
+			</ul>
+		</nav>
+		<marquee >This website is completely for the purpose of project,using any kind of cards is prohibited....</marquee>
+		<div class="loginBox">
+			<h4>Passenger Name:</h4>
+			<h4>Marital Status:</h4>
+			<h4>Age:</h4>
+			<h4>Boarding:</h4>
+			<h4>Destination:</h4>
+			<h4>Price:</h4>
+			<h4>Number Of Tickets Booked:</h4>
+			<h4>Other Passengers Name:</h4>
+			<h4>Age:</h4>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,238 @@
+body
+{
+	margin: 0;
+	padding: 0;
+	background: url(../images/17.jpg);
+	background-size: cover;
+	font-family: Verdana;
+}
+nav 
+{
+  top:0;
+  left:0;
+  position: relative;
+  width:100%;
+  height: 100px;
+  padding: 10px 100px;
+  box-sizing: border-box;
+  transition: .5s;
+}
+nav.black
+{
+	background: rgba(0,0,0,0.3);
+}
+nav .logo
+{
+	float: left;
+}
+nav .logo img
+{
+	width: 85px;
+	height: 85px;
+	border-radius: 15%;
+	overflow: hidden;
+	position: absolute;
+}
+nav ul
+{
+	float: right;
+	margin: 40px;
+	padding: 0;
+	display: flex;
+}
+nav ul li
+{
+	list-style: none;
+}
+nav ul li a
+{
+	line-height: : 80px;
+	color: #262626;
+	padding: 5px 20px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: Georgia;
+	font-size:18px;
+	font-weight: bold;
+	transition: 0.5s;
+	border-radius: 8px;
+}
+nav ul li a.active-page,
+nav ul li a:hover
+{
+	background-color: #00ffff;
+	display:block;
+	color:#fff;
+}
+nav ul li a:hover
+{
+	background-color: #00ffff;
+	color:#fff;
+}
+h4{
+	color: #fff;
+}
+.loginBox
+{   margin-top: 50px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 450px;
+	height: 480px;
+	padding: 40px;
+	box-sizing: border-box;
+	background: rgba(0,0,0,0.5);
+	box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+	border-radius: 8px;
+}
+.user
+{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	overflow: hidden;
+	position: absolute;
+	top: calc(-100px/2);
+	left: calc(50% - 50px);
+}
+.loginBox h2
+{
+	margin:  0;
+	padding: 13px 0 20px;
+	color: #fff;
+	text-align: center;
+	font-family: Georgia;
+	font-weight: bold;
+}
+.loginBox .btn
+{
+position: relative;;
+}
+.loginBox input
+{
+	width: 100%;
+	margin-bottom: 10px;
+	float: left;
+}
+.loginBox .plc input
+{
+	width: 100%;
+	height: 25px;
+}
+.loginBox .inputbox label
+{  
+	color:#fff;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 10px 0px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	pointer-events: none;
+	transition: 0.5s;
+}
+.loginBox .inputbox input:focus ~ label,
+.loginBox .inputbox input:valid ~ label
+{
+	top: -18px;
+	left: 0;
+	color:#00FFFF;
+	font-size: 15px;
+}
+.loginBox .inputbox input[type="text"],
+.loginBox .inputbox input[type="password"]
+{
+	border: none;
+	border-bottom: 1px solid #fff;
+	background: transparent;
+	outline: none;
+	height: 40px;
+	color: #fff;
+	font-size: 16px;
+}
+.loginBox input[type="submit"]
+{   
+	margin-top: 20px;
+	border: none;
+	outline: none;
+	height: 40px;
+	color: #fff;
+	font-size: 16px;
+	background: #00ffff;
+	cursor: pointer;
+	border-radius: 20px;
+}
+.loginBox input[type="submit"]:hover
+{
+	background: #efed40;
+	color: #262626;
+}
+.loginBox a
+{
+	color: #fff;
+	font-size: 14px;
+	font-weight: bold;
+	text-decoration: none;
+}
+.maxl{
+  margin:25px ;
+}
+.inline{
+  display: inline-block;
+}
+.inline + .inline{
+  margin-left:10px;
+}
+.radio{
+  color:#fff;
+  font-size:15px;
+  position:relative;
+}
+.radio span{
+  position:relative;
+   padding-left:20px;
+}
+.radio span:after{
+  content:'';
+  width:15px;
+  height:15px;
+  border:3px solid;
+  position:absolute;
+  left:0;
+  top:1px;
+  border-radius:100%;
+  -ms-border-radius:100%;
+  -moz-border-radius:100%;
+  -webkit-border-radius:100%;
+  box-sizing:border-box;
+  -ms-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+}
+.radio input[type="radio"]{
+   cursor: pointer; 
+  position:absolute;
+  width:100%;
+  height:100%;
+  z-index: 1;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"
+}
+.radio input[type="radio"]:checked + span{
+  color:#00ffff;  
+}
+.radio input[type="radio"]:checked + span:before{
+    content:'';
+  width:5px;
+  height:5px;
+  position:absolute;
+  background:#0B8;
+  left:5px;
+  top:6px;
+  border-radius:100%;
+  -ms-border-radius:100%;
+  -moz-border-radius:100%;
+  -webkit-border-radius:100%;
+}

@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Book Ticket</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/info.css') }}">
+        <link rel="shortcut icon"  href="{{ url_for('static',filename='images/f.ico') }}">
+	</head>
+	<body>
+		<nav class="black">
+			<div class="logo">
+				<img src="{{ url_for('static',filename='images/11.jpg') }}">
+			</div>
+			<ul>
+			        <li><a href="/book/" class='active-page'>Book Tickets</a></li>
+			        <li><a href="/explore/" >Explore</a></li>
+			        <li><a href="/profile/" >Profile</a> </li>  
+              <li><a href="/bookingh/">Booking History</a></li>
+              <li><a href="/logout/">Log Out</a></li>
+			</ul>
+		</nav>
+		<marquee>This website is completely for the purpose of project,using any kind of cards is prohibited....</marquee>
+          <div class="loginBox">
+               
+               <h2>Book Tickets</h2>
+               <form>
+                    <div class="inputbox">
+                        <input type="text" name="" required="">
+                        <label>Full Name</label>
+                    </div>
+                    <div class="inputbox">
+                        <input type="text" name="" required="">
+                        <label>Mobile Number</label>
+                    </div>
+                    <div class="inputbox">
+                       <input type="text" name="" required="">
+                       <label>Email</label>
+                    </div>
+                    <div class="inputbox">
+                       <input type="text" name="" list="cls" required="">
+                       <label>Class</label>
+                       <datalist id="cls">
+                            <option>Economy Class</option>
+                            <option>Premium Economy Class</option>
+                            <option>Business Class</option>
+                       </datalist>
+                    </div>
+                    <div class="plc">
+                       <h4>Date:</h4>
+                       <input type="date" name="" required="">
+                    </div>
+                    
+               </form>
+          </div>
+		<div class="Box">
+		   <form action="">
+               <div class="plc">
+                    <h4>Time:</h4>
+                    <input type="time" name="" required="">
+               </div>
+               <div class="maxl">
+               <h4>Gender:</h4>
+                   <label class="radio inline"> 
+                   <input type="radio" name="Gender" value=""  >
+                   <span>Male</span> 
+                   </label>
+                   <label class="radio inline"> 
+                   <input type="radio" name="Gender" value="">
+                   <span>Female</span> 
+                   </label>
+               </div>
+
+			 <input type="submit" name="" value="  Book  ">
+			 <a href="/explore/">Not yet decided ?</a>
+		   </form>
+		</div>
+	</body>
+</html>

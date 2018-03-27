@@ -1,0 +1,166 @@
+body
+{
+	margin: 0;
+	padding: 0;
+	background: url(../images/9.jpg);
+	background-size: cover;
+	font-family: Verdana;
+}
+nav 
+{
+  top:0;
+  left:0;
+  position: relative;
+  width:100%;
+  height: 100px;
+  padding: 10px 100px;
+  box-sizing: border-box;
+  transition: .5s;
+}
+nav.black
+{
+	background: rgba(0,0,0,0.3);
+}
+nav .logo
+{
+	float: left;
+}
+nav .logo img
+{
+	width: 85px;
+	height: 85px;
+	border-radius: 15%;
+	overflow: hidden;
+	position: absolute;
+}
+nav ul
+{
+	float: right;
+	margin: 40px;
+	padding: 0;
+	display: flex;
+}
+nav ul li
+{
+	list-style: none;
+}
+nav ul li a
+{
+	line-height: : 80px;
+	color: #262626;
+	padding: 5px 20px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: Georgia;
+	font-size:18px;
+	font-weight: bold;
+	transition: 0.5s;
+	border-radius: 8px;
+}
+nav ul li a.active-page,
+nav ul li a:hover
+{
+	background-color: #00ffff;
+	display:block;
+	color:#fff;
+}
+nav ul li a:hover
+{
+	background-color: #00ffff;
+	color:#fff;
+}
+.Box
+{   margin-top: 30px;
+	position: absolute;
+	top: 50%;
+	left:28%;
+	transform: translate(-50%,-50%);
+	width: 50%;
+	height: 450px;
+	padding: 40px;
+	box-sizing: border-box;
+	background: rgba(0,0,0,.3);
+	box-shadow: 0 10px 20px rgba(0,0,0,.5);
+	border-radius: 8px;
+}
+.rbox
+{   margin-top: 30px;
+	position: absolute;
+	top: 50%;
+	left:80%;
+	transform: translate(-50%,-50%);
+	width: 330px;
+	height: 350px;
+	padding: 10px;
+	box-sizing: border-box;
+	background: rgba(0,0,0,.3);
+	box-shadow: 0 10px 20px rgba(0,0,0,.5);
+	border-radius: 8px;
+}
+p{
+	color: #fff;
+}
+.rbox h4{
+	color: #fff;
+}
+.rbox ul
+{
+	display: flex;
+	position: absolute;
+}
+.rbox ul li
+{
+	list-style: none;
+}
+.rbox ul li a
+{   width:30px;
+	height: 30px;
+    text-align: center;
+    font-size: 25px;
+    margin: 0 10px;
+    display: block;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+}
+.rbox ul li a .fa
+{
+	position: relative;
+	color: #262626;
+	transition: 0.5s;
+}
+
+.rbox ul li a:hover .fa
+{
+	transform: rotateY(360deg);
+}
+.rbox ul li a:before 
+{
+	content: '';
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #f00;
+	transition: .5s;
+}
+.rbox ul li:nth-child(1) a:hover
+{
+	background: #3b5998;
+}
+.rbox ul li:nth-child(2) a:hover
+{
+	background: #1da1f2;
+}
+.rbox ul li:nth-child(3) a:hover
+{
+	background: #e4403f;
+}
+.rbox h5
+{
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+
+
